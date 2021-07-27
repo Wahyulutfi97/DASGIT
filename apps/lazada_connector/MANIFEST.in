@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include lazada_connector *.css
+recursive-include lazada_connector *.csv
+recursive-include lazada_connector *.html
+recursive-include lazada_connector *.ico
+recursive-include lazada_connector *.js
+recursive-include lazada_connector *.json
+recursive-include lazada_connector *.md
+recursive-include lazada_connector *.png
+recursive-include lazada_connector *.py
+recursive-include lazada_connector *.svg
+recursive-include lazada_connector *.txt
+recursive-exclude lazada_connector *.pyc

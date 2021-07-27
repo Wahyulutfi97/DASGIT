@@ -1,0 +1,213 @@
+{
+ "autoname": "field:order_id",
+ "creation": "2021-06-09 09:17:18.403891",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "marketplace",
+  "shop_name",
+  "order_id",
+  "order_status",
+  "column_break_5",
+  "posting_date",
+  "days_to_ship",
+  "section_break_8",
+  "customer",
+  "customer_name",
+  "recipient_address",
+  "column_break_12",
+  "recipient_phone",
+  "recipient_city",
+  "note",
+  "section_break_16",
+  "items",
+  "currency",
+  "total_amount",
+  "section_break_20",
+  "list_promo",
+  "total_cashback",
+  "shipment_section",
+  "shipping_carrier",
+  "estimated_shipping_fee",
+  "insurance_price",
+  "voucher_applied",
+  "additional_discount",
+  "tracking_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "marketplace",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Marketplace"
+  },
+  {
+   "fieldname": "shop_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Shop Name"
+  },
+  {
+   "fieldname": "order_id",
+   "fieldtype": "Data",
+   "label": "Order ID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "order_status",
+   "fieldtype": "Data",
+   "label": "Order Status"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "days_to_ship",
+   "fieldtype": "Data",
+   "label": "Days to Ship"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break",
+   "label": "Detai Customer"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "recipient_address",
+   "fieldtype": "Text",
+   "label": "Recipient Address"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "recipient_phone",
+   "fieldtype": "Data",
+   "label": "Recipient Phone"
+  },
+  {
+   "fieldname": "recipient_city",
+   "fieldtype": "Data",
+   "label": "Recipient City"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Text",
+   "label": "Note"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break",
+   "label": "List Items"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Tokopedia Orders Item"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Data",
+   "label": "Currency"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "section_break_20",
+   "fieldtype": "Section Break",
+   "label": "Promo"
+  },
+  {
+   "fieldname": "shipping_carrier",
+   "fieldtype": "Data",
+   "label": "Shipping Carrier"
+  },
+  {
+   "fieldname": "estimated_shipping_fee",
+   "fieldtype": "Currency",
+   "label": "Estimated Shipping Fee"
+  },
+  {
+   "fieldname": "voucher_applied",
+   "fieldtype": "Data",
+   "label": "Voucher Applied"
+  },
+  {
+   "fieldname": "additional_discount",
+   "fieldtype": "Data",
+   "label": "Additional Discount"
+  },
+  {
+   "fieldname": "tracking_no",
+   "fieldtype": "Data",
+   "label": "Tracking No"
+  },
+  {
+   "fieldname": "insurance_price",
+   "fieldtype": "Currency",
+   "label": "Insurance Price"
+  },
+  {
+   "fieldname": "shipment_section",
+   "fieldtype": "Section Break",
+   "label": "Shipment"
+  },
+  {
+   "fieldname": "total_cashback",
+   "fieldtype": "Currency",
+   "label": "Total Cashback"
+  },
+  {
+   "fieldname": "list_promo",
+   "fieldtype": "Table",
+   "label": "List Promo",
+   "options": "List Promo"
+  }
+ ],
+ "modified": "2021-06-10 10:16:00.939099",
+ "modified_by": "Administrator",
+ "module": "Tokopedia Connector",
+ "name": "Tokopedia Orders",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

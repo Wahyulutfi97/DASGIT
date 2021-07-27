@@ -1,0 +1,6 @@
+frappe
+erpnext
+lazada_connector
+marketplace_connector
+tokopedia_connector
+marketplace_integration

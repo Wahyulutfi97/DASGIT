@@ -1,0 +1,50 @@
+{
+ "autoname": "field:id",
+ "creation": "2021-06-15 15:04:25.772026",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "id",
+  "kategori"
+ ],
+ "fields": [
+  {
+   "fieldname": "kategori",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Kategori"
+  },
+  {
+   "fieldname": "id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Id",
+   "reqd": 1,
+   "unique": 1
+  }
+ ],
+ "modified": "2021-06-21 10:38:28.242928",
+ "modified_by": "lutfi@crativate.com",
+ "module": "Tokopedia Connector",
+ "name": "List Category Tokopedia",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "kategori",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

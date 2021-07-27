@@ -1,0 +1,49 @@
+{
+ "creation": "2021-06-10 10:13:39.618454",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "type",
+  "cashback_points",
+  "cashback_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name"
+  },
+  {
+   "fieldname": "cashback_points",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Cashback Points"
+  },
+  {
+   "fieldname": "cashback_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Cashback Amount"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Type"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-06-10 10:24:36.887228",
+ "modified_by": "Administrator",
+ "module": "Tokopedia Connector",
+ "name": "List Promo",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

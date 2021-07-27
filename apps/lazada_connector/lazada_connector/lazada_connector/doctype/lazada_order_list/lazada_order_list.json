@@ -1,0 +1,286 @@
+{
+ "creation": "2020-11-01 21:02:52.959499",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_1",
+  "order_id",
+  "date_created",
+  "order_status",
+  "days_to_ship",
+  "customer",
+  "customer_name",
+  "column_break_6",
+  "first_name_billing",
+  "last_name_billing",
+  "address1_billing",
+  "address2_billing",
+  "address3_billing",
+  "address4_billing",
+  "addres5_billing",
+  "city_billing",
+  "country_billing",
+  "post_code_billing",
+  "phone_billing",
+  "phone2_billing",
+  "note",
+  "cb_address_shipping",
+  "first_name_shipping",
+  "last_name_shipping",
+  "address1_shipping",
+  "address2_shipping",
+  "address3_shipping",
+  "address4_shipping",
+  "address5_shipping",
+  "city_shipping",
+  "country_shipping",
+  "post_code_shipping",
+  "phone_shipping",
+  "phone2_shipping",
+  "section_break_13",
+  "total_amount",
+  "currency",
+  "item_detail",
+  "voucher_applied",
+  "additional_discount",
+  "column_break_19",
+  "shipping_carrier",
+  "estimated_shipping_fee",
+  "tracking_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "order_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Order ID"
+  },
+  {
+   "fieldname": "date_created",
+   "fieldtype": "Data",
+   "label": "Date Created"
+  },
+  {
+   "fieldname": "order_status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Order Status"
+  },
+  {
+   "fieldname": "days_to_ship",
+   "fieldtype": "Data",
+   "label": "Days to Ship"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break",
+   "label": "Address Billing"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Data",
+   "label": "Customer ID"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Data",
+   "label": "Note"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Data",
+   "label": "Currency"
+  },
+  {
+   "fieldname": "item_detail",
+   "fieldtype": "Text",
+   "label": "Item Detail"
+  },
+  {
+   "fieldname": "voucher_applied",
+   "fieldtype": "Currency",
+   "label": "Voucher Applied"
+  },
+  {
+   "fieldname": "additional_discount",
+   "fieldtype": "Data",
+   "label": "Additional Discount"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shipping_carrier",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Shipping Carrier"
+  },
+  {
+   "fieldname": "estimated_shipping_fee",
+   "fieldtype": "Currency",
+   "label": "Estimated Shipping Fee"
+  },
+  {
+   "fieldname": "tracking_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tracking No"
+  },
+  {
+   "fieldname": "first_name_billing",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "last_name_billing",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "address1_billing",
+   "fieldtype": "Data",
+   "label": "Address1"
+  },
+  {
+   "fieldname": "address2_billing",
+   "fieldtype": "Data",
+   "label": "Address2"
+  },
+  {
+   "fieldname": "address3_billing",
+   "fieldtype": "Data",
+   "label": "Address3"
+  },
+  {
+   "fieldname": "address4_billing",
+   "fieldtype": "Data",
+   "label": "Address4"
+  },
+  {
+   "fieldname": "addres5_billing",
+   "fieldtype": "Data",
+   "label": "Address5"
+  },
+  {
+   "fieldname": "city_billing",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "country_billing",
+   "fieldtype": "Data",
+   "label": "Country"
+  },
+  {
+   "fieldname": "post_code_billing",
+   "fieldtype": "Data",
+   "label": "Post Code"
+  },
+  {
+   "fieldname": "phone_billing",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "phone2_billing",
+   "fieldtype": "Data",
+   "label": "Phone2"
+  },
+  {
+   "fieldname": "cb_address_shipping",
+   "fieldtype": "Column Break",
+   "label": "Address Shipping"
+  },
+  {
+   "fieldname": "first_name_shipping",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "last_name_shipping",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "address1_shipping",
+   "fieldtype": "Data",
+   "label": "Address1"
+  },
+  {
+   "fieldname": "address2_shipping",
+   "fieldtype": "Data",
+   "label": "Address2"
+  },
+  {
+   "fieldname": "address3_shipping",
+   "fieldtype": "Data",
+   "label": "Address3"
+  },
+  {
+   "fieldname": "address4_shipping",
+   "fieldtype": "Data",
+   "label": "Address4"
+  },
+  {
+   "fieldname": "address5_shipping",
+   "fieldtype": "Data",
+   "label": "Address5"
+  },
+  {
+   "fieldname": "city_shipping",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "country_shipping",
+   "fieldtype": "Data",
+   "label": "Country"
+  },
+  {
+   "fieldname": "post_code_shipping",
+   "fieldtype": "Data",
+   "label": "Post Code"
+  },
+  {
+   "fieldname": "phone_shipping",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "phone2_shipping",
+   "fieldtype": "Data",
+   "label": "Phone2"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-11-01 22:46:21.115877",
+ "modified_by": "Administrator",
+ "module": "Lazada Connector",
+ "name": "Lazada Order List",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

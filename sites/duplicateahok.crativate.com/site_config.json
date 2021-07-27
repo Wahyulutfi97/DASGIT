@@ -1,0 +1,7 @@
+{
+ "db_name": "db_copyahok",
+ "db_password": "5TaNx0yr0ximOglp",
+ "db_type": "mariadb",
+ "developer_mode": 1,
+ "dormant": true
+}

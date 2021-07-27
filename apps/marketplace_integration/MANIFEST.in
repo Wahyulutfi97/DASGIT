@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include marketplace_integration *.css
+recursive-include marketplace_integration *.csv
+recursive-include marketplace_integration *.html
+recursive-include marketplace_integration *.ico
+recursive-include marketplace_integration *.js
+recursive-include marketplace_integration *.json
+recursive-include marketplace_integration *.md
+recursive-include marketplace_integration *.png
+recursive-include marketplace_integration *.py
+recursive-include marketplace_integration *.svg
+recursive-include marketplace_integration *.txt
+recursive-exclude marketplace_integration *.pyc

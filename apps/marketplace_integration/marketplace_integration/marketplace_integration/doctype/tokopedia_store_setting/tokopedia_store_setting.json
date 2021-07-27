@@ -1,0 +1,202 @@
+{
+ "autoname": "field:store_name",
+ "creation": "2021-06-22 10:37:22.107743",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "enable_sync",
+  "general_information_section",
+  "store_name",
+  "app_id",
+  "client_id",
+  "clien_secret",
+  "column_break_7",
+  "basic_base_64",
+  "token",
+  "store_infromation_section",
+  "shop_name",
+  "column_break_12",
+  "shop_id",
+  "column_break_14",
+  "shop_url",
+  "other_information_section",
+  "warehouse",
+  "customer_group",
+  "column_break_19",
+  "create_new_item",
+  "default_uom",
+  "default_item_group",
+  "accounting_information_section",
+  "tax_account",
+  "shipping_account"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "enable_sync",
+   "fieldtype": "Check",
+   "label": "Enable Sync"
+  },
+  {
+   "fieldname": "general_information_section",
+   "fieldtype": "Section Break",
+   "label": "Credential Information"
+  },
+  {
+   "fieldname": "store_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Store Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "app_id",
+   "fieldtype": "Data",
+   "label": "App Id",
+   "reqd": 1
+  },
+  {
+   "fieldname": "client_id",
+   "fieldtype": "Data",
+   "label": "Client Id",
+   "reqd": 1
+  },
+  {
+   "fieldname": "clien_secret",
+   "fieldtype": "Data",
+   "label": "Clien Secret",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "basic_base_64",
+   "fieldtype": "Data",
+   "label": "Basic Base 64",
+   "read_only": 1
+  },
+  {
+   "fieldname": "token",
+   "fieldtype": "Data",
+   "label": "Token",
+   "read_only": 1
+  },
+  {
+   "fieldname": "store_infromation_section",
+   "fieldtype": "Section Break",
+   "label": "Store Infromation"
+  },
+  {
+   "fieldname": "shop_name",
+   "fieldtype": "Data",
+   "label": "Store Name Online",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shop_id",
+   "fieldtype": "Data",
+   "label": "Shop Id",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shop_url",
+   "fieldtype": "Data",
+   "label": "Shop URL",
+   "read_only": 1
+  },
+  {
+   "fieldname": "other_information_section",
+   "fieldtype": "Section Break",
+   "label": "Other Information"
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse",
+   "options": "Warehouse",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_group",
+   "fieldtype": "Link",
+   "label": "Customer Group",
+   "options": "Customer Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "create_new_item",
+   "fieldtype": "Check",
+   "label": "Create New Item From Order"
+  },
+  {
+   "fieldname": "default_uom",
+   "fieldtype": "Link",
+   "label": "Default UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "default_item_group",
+   "fieldtype": "Link",
+   "label": "Default Item Group",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "accounting_information_section",
+   "fieldtype": "Section Break",
+   "label": "Accounting Information"
+  },
+  {
+   "fieldname": "tax_account",
+   "fieldtype": "Link",
+   "label": "Tax Account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "shipping_account",
+   "fieldtype": "Link",
+   "label": "Shipping Account",
+   "options": "Account",
+   "reqd": 1
+  }
+ ],
+ "modified": "2021-06-22 12:11:43.295349",
+ "modified_by": "Administrator",
+ "module": "Marketplace Integration",
+ "name": "Tokopedia Store Setting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

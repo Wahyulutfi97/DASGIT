@@ -1,0 +1,67 @@
+{
+ "creation": "2021-06-22 11:17:25.103210",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_sku",
+  "item_name",
+  "qty",
+  "harga",
+  "diskon",
+  "total",
+  "foto"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_sku",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nomor SKU"
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama Barang"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Qty"
+  },
+  {
+   "fieldname": "harga",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Harga"
+  },
+  {
+   "fieldname": "diskon",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Diskon"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "label": "Total"
+  },
+  {
+   "fieldname": "foto",
+   "fieldtype": "Attach Image",
+   "label": "Foto"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-06-22 11:17:25.103210",
+ "modified_by": "Administrator",
+ "module": "Marketplace Integration",
+ "name": "Marketplace Order Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

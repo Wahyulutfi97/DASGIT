@@ -1,0 +1,243 @@
+{
+ "autoname": "field:store_name",
+ "creation": "2020-10-13 16:46:38.464106",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_1",
+  "store_location",
+  "url_store",
+  "api_key",
+  "api_secret",
+  "redirect_url",
+  "generate_url_for_authorization_code",
+  "url_for_authorization_code",
+  "authorization_code",
+  "access_token",
+  "refresh_token",
+  "test_sync",
+  "status_test_sync",
+  "column_break_6",
+  "disable",
+  "store_name",
+  "location",
+  "seller_id",
+  "seller_email",
+  "section_break_10",
+  "warehouse",
+  "price_list",
+  "customer_group",
+  "section_break_14",
+  "tax_account",
+  "shipping_account",
+  "manual_sync_item_section",
+  "initial_sync_item",
+  "cb_manual_sync_order",
+  "order_date",
+  "manual_sync_order"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "api_key",
+   "fieldtype": "Data",
+   "label": "API Key",
+   "reqd": 1
+  },
+  {
+   "fieldname": "test_sync",
+   "fieldtype": "Button",
+   "label": "Get Store Data",
+   "options": "test_sync"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "disable",
+   "fieldtype": "Check",
+   "label": "Disable"
+  },
+  {
+   "fieldname": "store_name",
+   "fieldtype": "Data",
+   "label": "Store Name",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "status_test_sync",
+   "fieldtype": "Text",
+   "label": "Status Connection",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "price_list",
+   "fieldtype": "Link",
+   "label": "Price List",
+   "options": "Price List"
+  },
+  {
+   "fieldname": "customer_group",
+   "fieldtype": "Link",
+   "label": "Customer Group",
+   "options": "Customer Group"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tax_account",
+   "fieldtype": "Link",
+   "label": "Tax Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "shipping_account",
+   "fieldtype": "Link",
+   "label": "Shipping Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "manual_sync_item_section",
+   "fieldtype": "Section Break",
+   "label": "Manual Sync Item"
+  },
+  {
+   "description": "initial sync for item, stock and price\nfrom erp to shopee\nrequired : Item SKU at Shopee = Item Code at ERP",
+   "fieldname": "initial_sync_item",
+   "fieldtype": "Button",
+   "label": "Initial Sync Item",
+   "options": "initial_sync_item"
+  },
+  {
+   "fieldname": "cb_manual_sync_order",
+   "fieldtype": "Column Break",
+   "label": "Manual Sync Order"
+  },
+  {
+   "fieldname": "order_date",
+   "fieldtype": "Date",
+   "label": "Order Date"
+  },
+  {
+   "fieldname": "manual_sync_order",
+   "fieldtype": "Button",
+   "label": "Manual Sync Order",
+   "options": "manual_sync_order"
+  },
+  {
+   "fieldname": "url_store",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Url Store",
+   "options": "\nhttps://api.lazada.co.id/rest\nhttps://api.lazada.sg/rest\nhttps://api.lazada.com.ph/rest\nhttps://api.lazada.vn/rest\nhttps://api.lazada.com.my/rest\nhttps://api.lazada.co.th/rest",
+   "reqd": 1
+  },
+  {
+   "fieldname": "api_secret",
+   "fieldtype": "Data",
+   "label": "API Secret",
+   "reqd": 1
+  },
+  {
+   "fieldname": "store_location",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Store Location",
+   "options": "\nIndonesia\nSingapore\nPhilippines\nVietnam\nMalaysia\nThailand",
+   "reqd": 1
+  },
+  {
+   "fieldname": "access_token",
+   "fieldtype": "Data",
+   "label": "Access Token"
+  },
+  {
+   "fieldname": "refresh_token",
+   "fieldtype": "Data",
+   "label": "Refresh Token"
+  },
+  {
+   "fieldname": "authorization_code",
+   "fieldtype": "Data",
+   "label": "Authorization Code"
+  },
+  {
+   "fieldname": "redirect_url",
+   "fieldtype": "Data",
+   "label": "Redirect URL",
+   "reqd": 1
+  },
+  {
+   "fieldname": "generate_url_for_authorization_code",
+   "fieldtype": "Button",
+   "label": "Generate URL for Authorization Code",
+   "options": "generate_url_for_authorization_code"
+  },
+  {
+   "description": "copy and paste this URL to your browser and following the step to get Authorization Code",
+   "fieldname": "url_for_authorization_code",
+   "fieldtype": "Text",
+   "label": "URL for Authorization Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location",
+   "read_only": 1
+  },
+  {
+   "fieldname": "seller_id",
+   "fieldtype": "Data",
+   "label": "Seller Id",
+   "read_only": 1
+  },
+  {
+   "fieldname": "seller_email",
+   "fieldtype": "Data",
+   "label": "Seller Email",
+   "read_only": 1
+  }
+ ],
+ "modified": "2020-11-01 17:11:40.170502",
+ "modified_by": "Administrator",
+ "module": "Lazada Connector",
+ "name": "Lazada Store",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

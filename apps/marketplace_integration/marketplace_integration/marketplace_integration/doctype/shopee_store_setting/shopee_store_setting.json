@@ -1,0 +1,209 @@
+{
+ "autoname": "field:store_name",
+ "creation": "2021-06-22 10:29:17.507876",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "enable_sync",
+  "credential_information_section",
+  "store_name",
+  "shop_id",
+  "partner_id",
+  "partner_key",
+  "column_break_8",
+  "redirect_url",
+  "generate_url_for_shop_id",
+  "url_shop_id",
+  "store_information_section",
+  "shop_name",
+  "column_break_14",
+  "shop_region",
+  "column_break_16",
+  "shop_status",
+  "other_information_section",
+  "warehouse",
+  "customer_group",
+  "column_break_21",
+  "create_new_item",
+  "default_uom",
+  "default_item_group",
+  "accounting_information_section",
+  "tax_account",
+  "shipping_account"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "enable_sync",
+   "fieldtype": "Check",
+   "label": "Enable Sync"
+  },
+  {
+   "fieldname": "credential_information_section",
+   "fieldtype": "Section Break",
+   "label": "Credential Information"
+  },
+  {
+   "fieldname": "store_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Store Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "shop_id",
+   "fieldtype": "Data",
+   "label": "Shop Id"
+  },
+  {
+   "fieldname": "partner_id",
+   "fieldtype": "Data",
+   "label": "Partner Id"
+  },
+  {
+   "fieldname": "partner_key",
+   "fieldtype": "Data",
+   "label": "Partner Key"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "redirect_url",
+   "fieldtype": "Data",
+   "label": "Redirect URL",
+   "reqd": 1
+  },
+  {
+   "fieldname": "generate_url_for_shop_id",
+   "fieldtype": "Button",
+   "label": "Generate URL for Shop ID",
+   "options": "generate_url_for_shop_id"
+  },
+  {
+   "fieldname": "url_shop_id",
+   "fieldtype": "Text",
+   "label": "URL Shop ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "store_information_section",
+   "fieldtype": "Section Break",
+   "label": "Store Information"
+  },
+  {
+   "fieldname": "shop_name",
+   "fieldtype": "Data",
+   "label": "Store Name Online",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shop_region",
+   "fieldtype": "Data",
+   "label": "Shop Region",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shop_status",
+   "fieldtype": "Data",
+   "label": "Shop Status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "other_information_section",
+   "fieldtype": "Section Break",
+   "label": "Other Information"
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Warehouse",
+   "options": "Warehouse",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer Group",
+   "options": "Customer Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "create_new_item",
+   "fieldtype": "Check",
+   "label": "Create New Item From Order"
+  },
+  {
+   "fieldname": "default_uom",
+   "fieldtype": "Link",
+   "label": "Default UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "default_item_group",
+   "fieldtype": "Link",
+   "label": "Default Item Group",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "accounting_information_section",
+   "fieldtype": "Section Break",
+   "label": "Accounting Information"
+  },
+  {
+   "fieldname": "tax_account",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Tax Account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "shipping_account",
+   "fieldtype": "Link",
+   "label": "Shipping Account",
+   "options": "Account",
+   "reqd": 1
+  }
+ ],
+ "modified": "2021-06-22 12:14:59.215248",
+ "modified_by": "Administrator",
+ "module": "Marketplace Integration",
+ "name": "Shopee Store Setting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

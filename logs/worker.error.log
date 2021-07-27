@@ -1,0 +1,991 @@
+00:00:04 long: Job OK (0f26a31a-d6cd-4eca-ac28-874d9a7f8ae6)
+00:00:04 Result is kept for 500 seconds
+00:00:04 Cleaning registries for queue: long
+00:00:04 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.utils.change_log.check_for_update', kwargs={}, method='frappe.utils.change_log.check_for_update', site='duplicateahok.crativate.com', user='Administrator') (986bc64b-b8f2-442d-a784-4744173a664d)
+fatal: No remote configured to list refs from.
+fatal: No remote configured to list refs from.
+fatal: No remote configured to list refs from.
+fatal: No remote configured to list refs from.
+00:00:05 long: Job OK (986bc64b-b8f2-442d-a784-4744173a664d)
+00:00:05 Result is kept for 500 seconds
+00:00:05 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily', kwargs={}, method='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily', site='duplicateahok.crativate.com', user='Administrator') (3edc5157-ce45-4233-91f0-a67e3c10c708)
+00:00:05 long: Job OK (3edc5157-ce45-4233-91f0-a67e3c10c708)
+00:00:05 Result is kept for 500 seconds
+00:00:05 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.google_drive.google_drive.daily_backup', kwargs={}, method='frappe.integrations.doctype.google_drive.google_drive.daily_backup', site='duplicateahok.crativate.com', user='Administrator') (7ded4ce4-d517-45b8-918c-05037b6221f1)
+00:00:06 long: Job OK (7ded4ce4-d517-45b8-918c-05037b6221f1)
+00:00:06 Result is kept for 500 seconds
+00:00:06 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.setup.doctype.email_digest.email_digest.send', kwargs={}, method='erpnext.setup.doctype.email_digest.email_digest.send', site='duplicateahok.crativate.com', user='Administrator') (1d7ca9f0-dff2-4fb1-b3ae-eb4217f8305e)
+00:00:08 frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+Traceback (most recent call last):
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 788, in send
+    ed_obj.send()
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 65, in send
+    unsubscribe_message = _("Unsubscribe from this Email Digest"))
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 492, in sendmail
+    inline_images=inline_images, header=header, print_letterhead=print_letterhead)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/smtp.py", line 85, in get_outgoing_email_account
+    frappe.OutgoingEmailError)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 380, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 359, in msgprint
+    _raise_exception()
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 319, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+Traceback (most recent call last):
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 788, in send
+    ed_obj.send()
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 65, in send
+    unsubscribe_message = _("Unsubscribe from this Email Digest"))
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 492, in sendmail
+    inline_images=inline_images, header=header, print_letterhead=print_letterhead)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/smtp.py", line 85, in get_outgoing_email_account
+    frappe.OutgoingEmailError)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 380, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 359, in msgprint
+    _raise_exception()
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 319, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+00:00:08 Moving job to 'failed' queue
+00:00:08 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.update_latest_price_in_all_boms', kwargs={}, method='erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.update_latest_price_in_all_boms', site='duplicateahok.crativate.com', user='Administrator') (b451cd72-07c2-4fb0-b8c7-0fe731ccf740)
+00:00:08 long: Job OK (b451cd72-07c2-4fb0-b8c7-0fe731ccf740)
+00:00:08 Result is kept for 500 seconds
+00:00:08 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation', kwargs={}, method='erpnext.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation', site='duplicateahok.crativate.com', user='Administrator') (b71193be-c5ba-4019-acc7-9fd9b045020e)
+00:00:09 long: Job OK (b71193be-c5ba-4019-acc7-9fd9b045020e)
+00:00:09 Result is kept for 500 seconds
+00:00:09 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.hr.utils.generate_leave_encashment', kwargs={}, method='erpnext.hr.utils.generate_leave_encashment', site='duplicateahok.crativate.com', user='Administrator') (b876b7ff-12c3-4f84-8ff1-617c5c2be52c)
+00:00:09 long: Job OK (b876b7ff-12c3-4f84-8ff1-617c5c2be52c)
+00:00:09 Result is kept for 500 seconds
+00:00:27 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily', kwargs={}, method='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily', site='duplicateahok.crativate.com', user='Administrator') (0c573e89-3e10-4dfb-abba-ad45425cb576)
+00:00:28 long: Job OK (0c573e89-3e10-4dfb-abba-ad45425cb576)
+00:00:28 Result is kept for 500 seconds
+00:00:28 Cleaning registries for queue: long
+00:00:28 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.utils.change_log.check_for_update', kwargs={}, method='frappe.utils.change_log.check_for_update', site='duplicateahok.crativate.com', user='Administrator') (5374fab1-00ea-4bfe-8611-bcc0ae985e52)
+fatal: No remote configured to list refs from.
+fatal: No remote configured to list refs from.
+fatal: No remote configured to list refs from.
+fatal: No remote configured to list refs from.
+00:00:28 long: Job OK (5374fab1-00ea-4bfe-8611-bcc0ae985e52)
+00:00:28 Result is kept for 500 seconds
+00:00:28 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily', kwargs={}, method='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily', site='duplicateahok.crativate.com', user='Administrator') (c0c7a100-d2a3-45d9-b7d0-f90a5576c756)
+00:00:28 long: Job OK (c0c7a100-d2a3-45d9-b7d0-f90a5576c756)
+00:00:28 Result is kept for 500 seconds
+00:00:28 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.google_drive.google_drive.daily_backup', kwargs={}, method='frappe.integrations.doctype.google_drive.google_drive.daily_backup', site='duplicateahok.crativate.com', user='Administrator') (6fa9644c-e57b-4332-aa16-a2a45c297d06)
+00:00:28 long: Job OK (6fa9644c-e57b-4332-aa16-a2a45c297d06)
+00:00:28 Result is kept for 500 seconds
+00:00:28 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.setup.doctype.email_digest.email_digest.send', kwargs={}, method='erpnext.setup.doctype.email_digest.email_digest.send', site='duplicateahok.crativate.com', user='Administrator') (f8eadb82-3a71-4274-8b2e-e0aa8bbeb925)
+00:00:29 frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+Traceback (most recent call last):
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 788, in send
+    ed_obj.send()
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 65, in send
+    unsubscribe_message = _("Unsubscribe from this Email Digest"))
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 492, in sendmail
+    inline_images=inline_images, header=header, print_letterhead=print_letterhead)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/smtp.py", line 85, in get_outgoing_email_account
+    frappe.OutgoingEmailError)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 380, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 359, in msgprint
+    _raise_exception()
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 319, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+Traceback (most recent call last):
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 788, in send
+    ed_obj.send()
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 65, in send
+    unsubscribe_message = _("Unsubscribe from this Email Digest"))
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 492, in sendmail
+    inline_images=inline_images, header=header, print_letterhead=print_letterhead)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/smtp.py", line 85, in get_outgoing_email_account
+    frappe.OutgoingEmailError)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 380, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 359, in msgprint
+    _raise_exception()
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 319, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+00:00:29 Moving job to 'failed' queue
+00:00:29 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.update_latest_price_in_all_boms', kwargs={}, method='erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.update_latest_price_in_all_boms', site='duplicateahok.crativate.com', user='Administrator') (d0fef565-b337-455e-bc2f-93918ed4c8ab)
+00:00:29 long: Job OK (d0fef565-b337-455e-bc2f-93918ed4c8ab)
+00:00:29 Result is kept for 500 seconds
+00:00:29 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation', kwargs={}, method='erpnext.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation', site='duplicateahok.crativate.com', user='Administrator') (9797e401-4932-4744-8dbc-99e60a1c0eba)
+00:00:29 long: Job OK (9797e401-4932-4744-8dbc-99e60a1c0eba)
+00:00:29 Result is kept for 500 seconds
+00:00:29 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.hr.utils.generate_leave_encashment', kwargs={}, method='erpnext.hr.utils.generate_leave_encashment', site='duplicateahok.crativate.com', user='Administrator') (43a4810c-b40f-414d-b79d-73ed59b1405a)
+00:00:30 long: Job OK (43a4810c-b40f-414d-b79d-73ed59b1405a)
+00:00:30 Result is kept for 500 seconds
+00:00:53 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily', kwargs={}, method='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily', site='duplicateahok.crativate.com', user='Administrator') (6b9e2ab7-156d-422d-b6f8-126a6b158a2e)
+00:00:54 long: Job OK (6b9e2ab7-156d-422d-b6f8-126a6b158a2e)
+00:00:54 Result is kept for 500 seconds
+00:00:54 Cleaning registries for queue: long
+00:00:54 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.utils.change_log.check_for_update', kwargs={}, method='frappe.utils.change_log.check_for_update', site='duplicateahok.crativate.com', user='Administrator') (a372363d-e3cd-40df-8844-ab827eb4d125)
+fatal: No remote configured to list refs from.
+fatal: No remote configured to list refs from.
+fatal: No remote configured to list refs from.
+fatal: No remote configured to list refs from.
+00:00:54 long: Job OK (a372363d-e3cd-40df-8844-ab827eb4d125)
+00:00:54 Result is kept for 500 seconds
+00:00:54 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily', kwargs={}, method='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily', site='duplicateahok.crativate.com', user='Administrator') (bc3b639d-c5b6-4676-b2f7-7574447cc479)
+00:00:54 long: Job OK (bc3b639d-c5b6-4676-b2f7-7574447cc479)
+00:00:54 Result is kept for 500 seconds
+00:00:54 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.google_drive.google_drive.daily_backup', kwargs={}, method='frappe.integrations.doctype.google_drive.google_drive.daily_backup', site='duplicateahok.crativate.com', user='Administrator') (b4609b64-4968-407d-b2ad-fb5ccf51bfb0)
+00:00:55 long: Job OK (b4609b64-4968-407d-b2ad-fb5ccf51bfb0)
+00:00:55 Result is kept for 500 seconds
+00:00:55 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.setup.doctype.email_digest.email_digest.send', kwargs={}, method='erpnext.setup.doctype.email_digest.email_digest.send', site='duplicateahok.crativate.com', user='Administrator') (5e5a0bd5-d784-46c4-8251-1c88518a2e9c)
+00:00:56 frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+Traceback (most recent call last):
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 788, in send
+    ed_obj.send()
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 65, in send
+    unsubscribe_message = _("Unsubscribe from this Email Digest"))
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 492, in sendmail
+    inline_images=inline_images, header=header, print_letterhead=print_letterhead)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/smtp.py", line 85, in get_outgoing_email_account
+    frappe.OutgoingEmailError)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 380, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 359, in msgprint
+    _raise_exception()
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 319, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+Traceback (most recent call last):
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 788, in send
+    ed_obj.send()
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 65, in send
+    unsubscribe_message = _("Unsubscribe from this Email Digest"))
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 492, in sendmail
+    inline_images=inline_images, header=header, print_letterhead=print_letterhead)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/smtp.py", line 85, in get_outgoing_email_account
+    frappe.OutgoingEmailError)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 380, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 359, in msgprint
+    _raise_exception()
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 319, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+00:00:56 Moving job to 'failed' queue
+00:00:56 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.update_latest_price_in_all_boms', kwargs={}, method='erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.update_latest_price_in_all_boms', site='duplicateahok.crativate.com', user='Administrator') (d4a7d350-2e46-48ea-b6d9-2c7f26ba41c1)
+00:00:56 long: Job OK (d4a7d350-2e46-48ea-b6d9-2c7f26ba41c1)
+00:00:56 Result is kept for 500 seconds
+00:00:56 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation', kwargs={}, method='erpnext.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation', site='duplicateahok.crativate.com', user='Administrator') (a344ca28-76a9-4f54-9658-9c1ce42d4ee1)
+00:00:56 long: Job OK (a344ca28-76a9-4f54-9658-9c1ce42d4ee1)
+00:00:56 Result is kept for 500 seconds
+00:00:56 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.hr.utils.generate_leave_encashment', kwargs={}, method='erpnext.hr.utils.generate_leave_encashment', site='duplicateahok.crativate.com', user='Administrator') (f58b0ed2-50fc-45eb-8437-a39def9dbca7)
+00:00:56 long: Job OK (f58b0ed2-50fc-45eb-8437-a39def9dbca7)
+00:00:56 Result is kept for 500 seconds
+00:00:56 long: frappe.utils.background_jobs.execute_job(event='weekly_long', is_async=True, job_name='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_weekly', kwargs={}, method='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_weekly', site='duplicateahok.crativate.com', user='Administrator') (deedf83b-1f5f-49eb-b521-f1cfb768495a)
+00:00:57 long: Job OK (deedf83b-1f5f-49eb-b521-f1cfb768495a)
+00:00:57 Result is kept for 500 seconds
+00:00:57 long: frappe.utils.background_jobs.execute_job(event='weekly_long', is_async=True, job_name='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_weekly', kwargs={}, method='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_weekly', site='duplicateahok.crativate.com', user='Administrator') (2860dbbb-3e4b-41d1-956e-c8253394691b)
+00:00:57 long: Job OK (2860dbbb-3e4b-41d1-956e-c8253394691b)
+00:00:57 Result is kept for 500 seconds
+00:00:57 long: frappe.utils.background_jobs.execute_job(event='weekly_long', is_async=True, job_name='frappe.desk.doctype.route_history.route_history.flush_old_route_records', kwargs={}, method='frappe.desk.doctype.route_history.route_history.flush_old_route_records', site='duplicateahok.crativate.com', user='Administrator') (42c39e92-84c5-41cd-a339-d6fc133538be)
+00:00:57 long: Job OK (42c39e92-84c5-41cd-a339-d6fc133538be)
+00:00:57 Result is kept for 500 seconds
+00:00:57 long: frappe.utils.background_jobs.execute_job(event='weekly_long', is_async=True, job_name='frappe.desk.form.document_follow.send_weekly_updates', kwargs={}, method='frappe.desk.form.document_follow.send_weekly_updates', site='duplicateahok.crativate.com', user='Administrator') (63a0231f-677e-4185-ab1a-73b9a7334e06)
+00:00:57 long: Job OK (63a0231f-677e-4185-ab1a-73b9a7334e06)
+00:00:57 Result is kept for 500 seconds
+00:00:57 long: frappe.utils.background_jobs.execute_job(event='weekly_long', is_async=True, job_name='frappe.social.doctype.energy_point_log.energy_point_log.send_weekly_summary', kwargs={}, method='frappe.social.doctype.energy_point_log.energy_point_log.send_weekly_summary', site='duplicateahok.crativate.com', user='Administrator') (f13b4374-e6f4-4f94-8d12-69b2b2472332)
+00:00:57 long: Job OK (f13b4374-e6f4-4f94-8d12-69b2b2472332)
+00:00:57 Result is kept for 500 seconds
+00:00:57 long: frappe.utils.background_jobs.execute_job(event='weekly_long', is_async=True, job_name='frappe.integrations.doctype.google_drive.google_drive.weekly_backup', kwargs={}, method='frappe.integrations.doctype.google_drive.google_drive.weekly_backup', site='duplicateahok.crativate.com', user='Administrator') (eecf4c1a-fef0-48a2-82d8-2a6e2e6241d7)
+00:00:57 long: Job OK (eecf4c1a-fef0-48a2-82d8-2a6e2e6241d7)
+00:00:57 Result is kept for 500 seconds
+00:00:23 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily', kwargs={}, method='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily', site='duplicateahok.crativate.com', user='Administrator') (3bea1908-b414-4df3-8e97-d068b6f8b676)
+00:00:24 long: Job OK (3bea1908-b414-4df3-8e97-d068b6f8b676)
+00:00:24 Result is kept for 500 seconds
+00:00:24 Cleaning registries for queue: long
+00:00:24 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.utils.change_log.check_for_update', kwargs={}, method='frappe.utils.change_log.check_for_update', site='duplicateahok.crativate.com', user='Administrator') (fbe31ee5-dc98-4994-ad70-659b1f0f4241)
+fatal: No remote configured to list refs from.
+fatal: No remote configured to list refs from.
+fatal: No remote configured to list refs from.
+fatal: No remote configured to list refs from.
+00:00:24 long: Job OK (fbe31ee5-dc98-4994-ad70-659b1f0f4241)
+00:00:24 Result is kept for 500 seconds
+00:00:24 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily', kwargs={}, method='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily', site='duplicateahok.crativate.com', user='Administrator') (5f1cdb17-38d7-4478-a2fe-288cc2e17aa3)
+00:00:24 long: Job OK (5f1cdb17-38d7-4478-a2fe-288cc2e17aa3)
+00:00:24 Result is kept for 500 seconds
+00:00:24 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.google_drive.google_drive.daily_backup', kwargs={}, method='frappe.integrations.doctype.google_drive.google_drive.daily_backup', site='duplicateahok.crativate.com', user='Administrator') (cdcf416c-7a9f-423f-838d-9112a3fd4d7c)
+00:00:25 long: Job OK (cdcf416c-7a9f-423f-838d-9112a3fd4d7c)
+00:00:25 Result is kept for 500 seconds
+00:00:25 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.setup.doctype.email_digest.email_digest.send', kwargs={}, method='erpnext.setup.doctype.email_digest.email_digest.send', site='duplicateahok.crativate.com', user='Administrator') (39b35f61-4958-410c-b3c6-3b39bb6e08d8)
+00:00:35 frappe.exceptions.ValidationError: No items to be received are overdue
+Traceback (most recent call last):
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 788, in send
+    ed_obj.send()
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 57, in send
+    msg_for_this_recipient = self.get_msg_html()
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 102, in get_msg_html
+    frappe.throw(_("No items to be received are overdue"))
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 380, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 359, in msgprint
+    _raise_exception()
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 319, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.ValidationError: No items to be received are overdue
+Traceback (most recent call last):
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 788, in send
+    ed_obj.send()
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 57, in send
+    msg_for_this_recipient = self.get_msg_html()
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 102, in get_msg_html
+    frappe.throw(_("No items to be received are overdue"))
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 380, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 359, in msgprint
+    _raise_exception()
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 319, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.ValidationError: No items to be received are overdue
+00:00:35 Moving job to 'failed' queue
+00:00:35 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.update_latest_price_in_all_boms', kwargs={}, method='erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.update_latest_price_in_all_boms', site='duplicateahok.crativate.com', user='Administrator') (f91f46be-bb52-4c8b-bbdd-f61387867f10)
+00:00:35 long: Job OK (f91f46be-bb52-4c8b-bbdd-f61387867f10)
+00:00:35 Result is kept for 500 seconds
+00:00:35 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation', kwargs={}, method='erpnext.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation', site='duplicateahok.crativate.com', user='Administrator') (cabd3c01-f6de-49b3-b0f3-cb7be21e3cc0)
+00:00:35 long: Job OK (cabd3c01-f6de-49b3-b0f3-cb7be21e3cc0)
+00:00:35 Result is kept for 500 seconds
+00:00:35 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.hr.utils.generate_leave_encashment', kwargs={}, method='erpnext.hr.utils.generate_leave_encashment', site='duplicateahok.crativate.com', user='Administrator') (771717da-68c0-46af-81dd-0420ba902bcb)
+00:00:35 long: Job OK (771717da-68c0-46af-81dd-0420ba902bcb)
+00:00:35 Result is kept for 500 seconds
+00:00:47 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily', kwargs={}, method='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily', site='duplicateahok.crativate.com', user='Administrator') (b60b6c2f-c0e8-4726-9c73-25de70b12d1c)
+00:00:48 long: Job OK (b60b6c2f-c0e8-4726-9c73-25de70b12d1c)
+00:00:48 Result is kept for 500 seconds
+00:00:48 Cleaning registries for queue: long
+00:00:48 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.utils.change_log.check_for_update', kwargs={}, method='frappe.utils.change_log.check_for_update', site='duplicateahok.crativate.com', user='Administrator') (43ce65eb-8b5b-4e79-a9ea-7648a98d22a5)
+fatal: No remote configured to list refs from.
+fatal: No remote configured to list refs from.
+fatal: No remote configured to list refs from.
+fatal: No remote configured to list refs from.
+00:00:48 long: Job OK (43ce65eb-8b5b-4e79-a9ea-7648a98d22a5)
+00:00:48 Result is kept for 500 seconds
+00:00:48 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily', kwargs={}, method='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily', site='duplicateahok.crativate.com', user='Administrator') (05858b31-6244-4de9-af5a-924b9e8830a3)
+00:00:49 long: Job OK (05858b31-6244-4de9-af5a-924b9e8830a3)
+00:00:49 Result is kept for 500 seconds
+00:00:49 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.google_drive.google_drive.daily_backup', kwargs={}, method='frappe.integrations.doctype.google_drive.google_drive.daily_backup', site='duplicateahok.crativate.com', user='Administrator') (18dd86f5-6675-4371-96d5-2f942376695c)
+00:00:49 long: Job OK (18dd86f5-6675-4371-96d5-2f942376695c)
+00:00:49 Result is kept for 500 seconds
+00:00:49 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.setup.doctype.email_digest.email_digest.send', kwargs={}, method='erpnext.setup.doctype.email_digest.email_digest.send', site='duplicateahok.crativate.com', user='Administrator') (5160aed4-e2e2-4388-a370-81dc58005436)
+00:00:50 frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+Traceback (most recent call last):
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 788, in send
+    ed_obj.send()
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 65, in send
+    unsubscribe_message = _("Unsubscribe from this Email Digest"))
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 492, in sendmail
+    inline_images=inline_images, header=header, print_letterhead=print_letterhead)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/smtp.py", line 85, in get_outgoing_email_account
+    frappe.OutgoingEmailError)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 380, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 359, in msgprint
+    _raise_exception()
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 319, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+Traceback (most recent call last):
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 788, in send
+    ed_obj.send()
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 65, in send
+    unsubscribe_message = _("Unsubscribe from this Email Digest"))
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 492, in sendmail
+    inline_images=inline_images, header=header, print_letterhead=print_letterhead)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/smtp.py", line 85, in get_outgoing_email_account
+    frappe.OutgoingEmailError)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 380, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 359, in msgprint
+    _raise_exception()
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 319, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+00:00:50 Moving job to 'failed' queue
+00:00:50 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.update_latest_price_in_all_boms', kwargs={}, method='erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.update_latest_price_in_all_boms', site='duplicateahok.crativate.com', user='Administrator') (d95fb86c-3467-49f9-bcc6-b45a86502e61)
+00:00:50 long: Job OK (d95fb86c-3467-49f9-bcc6-b45a86502e61)
+00:00:50 Result is kept for 500 seconds
+00:00:50 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation', kwargs={}, method='erpnext.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation', site='duplicateahok.crativate.com', user='Administrator') (0fb8ea53-c78c-4651-803d-51bd259f2d2f)
+00:00:50 long: Job OK (0fb8ea53-c78c-4651-803d-51bd259f2d2f)
+00:00:50 Result is kept for 500 seconds
+00:00:50 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.hr.utils.generate_leave_encashment', kwargs={}, method='erpnext.hr.utils.generate_leave_encashment', site='duplicateahok.crativate.com', user='Administrator') (412ff972-add4-40a5-b9c9-dbb9b5f4320c)
+00:00:50 long: Job OK (412ff972-add4-40a5-b9c9-dbb9b5f4320c)
+00:00:50 Result is kept for 500 seconds
+00:00:18 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily', kwargs={}, method='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily', site='duplicateahok.crativate.com', user='Administrator') (c1dd271e-a60a-47ec-ad18-c85c3a3b30b7)
+00:00:19 long: Job OK (c1dd271e-a60a-47ec-ad18-c85c3a3b30b7)
+00:00:19 Result is kept for 500 seconds
+00:00:19 Cleaning registries for queue: long
+00:00:19 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.utils.change_log.check_for_update', kwargs={}, method='frappe.utils.change_log.check_for_update', site='duplicateahok.crativate.com', user='Administrator') (8475b865-3f7f-4099-8b79-9347cdceef33)
+fatal: No remote configured to list refs from.
+fatal: No remote configured to list refs from.
+fatal: No remote configured to list refs from.
+fatal: No remote configured to list refs from.
+00:00:19 long: Job OK (8475b865-3f7f-4099-8b79-9347cdceef33)
+00:00:19 Result is kept for 500 seconds
+00:00:19 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily', kwargs={}, method='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily', site='duplicateahok.crativate.com', user='Administrator') (0c3e42ca-539b-433f-8fd9-b4c10e010a34)
+00:00:19 long: Job OK (0c3e42ca-539b-433f-8fd9-b4c10e010a34)
+00:00:19 Result is kept for 500 seconds
+00:00:19 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.google_drive.google_drive.daily_backup', kwargs={}, method='frappe.integrations.doctype.google_drive.google_drive.daily_backup', site='duplicateahok.crativate.com', user='Administrator') (492aa082-a9b1-4e23-a579-a3caaefded1c)
+00:00:20 long: Job OK (492aa082-a9b1-4e23-a579-a3caaefded1c)
+00:00:20 Result is kept for 500 seconds
+00:00:20 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.setup.doctype.email_digest.email_digest.send', kwargs={}, method='erpnext.setup.doctype.email_digest.email_digest.send', site='duplicateahok.crativate.com', user='Administrator') (5591dca2-c5ec-4cac-a557-f3896d587e1c)
+00:00:20 frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+Traceback (most recent call last):
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 788, in send
+    ed_obj.send()
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 65, in send
+    unsubscribe_message = _("Unsubscribe from this Email Digest"))
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 492, in sendmail
+    inline_images=inline_images, header=header, print_letterhead=print_letterhead)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/smtp.py", line 85, in get_outgoing_email_account
+    frappe.OutgoingEmailError)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 380, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 359, in msgprint
+    _raise_exception()
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 319, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+Traceback (most recent call last):
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 788, in send
+    ed_obj.send()
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 65, in send
+    unsubscribe_message = _("Unsubscribe from this Email Digest"))
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 492, in sendmail
+    inline_images=inline_images, header=header, print_letterhead=print_letterhead)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/smtp.py", line 85, in get_outgoing_email_account
+    frappe.OutgoingEmailError)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 380, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 359, in msgprint
+    _raise_exception()
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 319, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+00:00:20 Moving job to 'failed' queue
+00:00:20 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.update_latest_price_in_all_boms', kwargs={}, method='erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.update_latest_price_in_all_boms', site='duplicateahok.crativate.com', user='Administrator') (f4f25901-f446-4c37-984f-5e15faa9b837)
+00:00:20 long: Job OK (f4f25901-f446-4c37-984f-5e15faa9b837)
+00:00:20 Result is kept for 500 seconds
+00:00:20 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation', kwargs={}, method='erpnext.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation', site='duplicateahok.crativate.com', user='Administrator') (e9668ff6-d050-4124-88c4-c3edd2ee9682)
+00:00:21 long: Job OK (e9668ff6-d050-4124-88c4-c3edd2ee9682)
+00:00:21 Result is kept for 500 seconds
+00:00:21 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.hr.utils.generate_leave_encashment', kwargs={}, method='erpnext.hr.utils.generate_leave_encashment', site='duplicateahok.crativate.com', user='Administrator') (b9ecc133-84e7-4326-963e-9c7e44ac61f2)
+00:00:21 long: Job OK (b9ecc133-84e7-4326-963e-9c7e44ac61f2)
+00:00:21 Result is kept for 500 seconds
+00:00:51 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily', kwargs={}, method='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily', site='duplicateahok.crativate.com', user='Administrator') (229b4799-a2d6-4ad7-9982-c1b61399036e)
+00:00:52 long: Job OK (229b4799-a2d6-4ad7-9982-c1b61399036e)
+00:00:52 Result is kept for 500 seconds
+00:00:52 Cleaning registries for queue: long
+00:00:52 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.utils.change_log.check_for_update', kwargs={}, method='frappe.utils.change_log.check_for_update', site='duplicateahok.crativate.com', user='Administrator') (918ad4f3-57f0-4bf5-b4be-2f234863dcb4)
+fatal: No remote configured to list refs from.
+fatal: No remote configured to list refs from.
+fatal: No remote configured to list refs from.
+fatal: No remote configured to list refs from.
+00:00:52 long: Job OK (918ad4f3-57f0-4bf5-b4be-2f234863dcb4)
+00:00:52 Result is kept for 500 seconds
+00:00:52 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily', kwargs={}, method='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily', site='duplicateahok.crativate.com', user='Administrator') (55895040-a653-4aa8-93aa-08a3a995a917)
+00:00:52 long: Job OK (55895040-a653-4aa8-93aa-08a3a995a917)
+00:00:52 Result is kept for 500 seconds
+00:00:52 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.google_drive.google_drive.daily_backup', kwargs={}, method='frappe.integrations.doctype.google_drive.google_drive.daily_backup', site='duplicateahok.crativate.com', user='Administrator') (7b656389-fbaa-4cba-95b5-18408a4653ec)
+00:00:53 long: Job OK (7b656389-fbaa-4cba-95b5-18408a4653ec)
+00:00:53 Result is kept for 500 seconds
+00:00:53 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.setup.doctype.email_digest.email_digest.send', kwargs={}, method='erpnext.setup.doctype.email_digest.email_digest.send', site='duplicateahok.crativate.com', user='Administrator') (6e2fbdea-661a-4d26-b373-941c70246c02)
+00:00:53 frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+Traceback (most recent call last):
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 788, in send
+    ed_obj.send()
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 65, in send
+    unsubscribe_message = _("Unsubscribe from this Email Digest"))
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 492, in sendmail
+    inline_images=inline_images, header=header, print_letterhead=print_letterhead)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/smtp.py", line 85, in get_outgoing_email_account
+    frappe.OutgoingEmailError)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 380, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 359, in msgprint
+    _raise_exception()
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 319, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+Traceback (most recent call last):
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 788, in send
+    ed_obj.send()
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 65, in send
+    unsubscribe_message = _("Unsubscribe from this Email Digest"))
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 492, in sendmail
+    inline_images=inline_images, header=header, print_letterhead=print_letterhead)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/smtp.py", line 85, in get_outgoing_email_account
+    frappe.OutgoingEmailError)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 380, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 359, in msgprint
+    _raise_exception()
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 319, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+00:00:53 Moving job to 'failed' queue
+00:00:53 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.update_latest_price_in_all_boms', kwargs={}, method='erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.update_latest_price_in_all_boms', site='duplicateahok.crativate.com', user='Administrator') (4c6db320-0291-4bab-afed-546338c130ba)
+00:00:54 long: Job OK (4c6db320-0291-4bab-afed-546338c130ba)
+00:00:54 Result is kept for 500 seconds
+00:00:54 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation', kwargs={}, method='erpnext.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation', site='duplicateahok.crativate.com', user='Administrator') (f3c7ed0e-0a4a-4cf6-8309-69e5956a4762)
+00:00:54 long: Job OK (f3c7ed0e-0a4a-4cf6-8309-69e5956a4762)
+00:00:54 Result is kept for 500 seconds
+00:00:54 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.hr.utils.generate_leave_encashment', kwargs={}, method='erpnext.hr.utils.generate_leave_encashment', site='duplicateahok.crativate.com', user='Administrator') (c5bca358-3780-43a4-8e9f-689555487978)
+00:00:54 long: Job OK (c5bca358-3780-43a4-8e9f-689555487978)
+00:00:54 Result is kept for 500 seconds
+00:00:52 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily', kwargs={}, method='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily', site='duplicateahok.crativate.com', user='Administrator') (e4e9ea92-a48b-4185-912c-972e94542aa6)
+00:00:52 long: Job OK (e4e9ea92-a48b-4185-912c-972e94542aa6)
+00:00:52 Result is kept for 500 seconds
+00:00:52 Cleaning registries for queue: long
+00:00:52 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.utils.change_log.check_for_update', kwargs={}, method='frappe.utils.change_log.check_for_update', site='duplicateahok.crativate.com', user='Administrator') (a360b7de-9ca3-4ae1-80a2-0d0a86ca5739)
+fatal: No remote configured to list refs from.
+fatal: No remote configured to list refs from.
+fatal: No remote configured to list refs from.
+fatal: No remote configured to list refs from.
+00:00:52 long: Job OK (a360b7de-9ca3-4ae1-80a2-0d0a86ca5739)
+00:00:52 Result is kept for 500 seconds
+00:00:52 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily', kwargs={}, method='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily', site='duplicateahok.crativate.com', user='Administrator') (dc8e2a51-7420-4dbb-8f2c-114b479d9a6b)
+00:00:53 long: Job OK (dc8e2a51-7420-4dbb-8f2c-114b479d9a6b)
+00:00:53 Result is kept for 500 seconds
+00:00:53 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.google_drive.google_drive.daily_backup', kwargs={}, method='frappe.integrations.doctype.google_drive.google_drive.daily_backup', site='duplicateahok.crativate.com', user='Administrator') (3cbcb9a7-c647-4d04-99bb-3361d7eeec75)
+00:00:53 long: Job OK (3cbcb9a7-c647-4d04-99bb-3361d7eeec75)
+00:00:53 Result is kept for 500 seconds
+00:00:53 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.setup.doctype.email_digest.email_digest.send', kwargs={}, method='erpnext.setup.doctype.email_digest.email_digest.send', site='duplicateahok.crativate.com', user='Administrator') (b898cad6-b3f8-4c28-a539-f8a45f905cff)
+00:00:54 frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+Traceback (most recent call last):
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 788, in send
+    ed_obj.send()
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 65, in send
+    unsubscribe_message = _("Unsubscribe from this Email Digest"))
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 492, in sendmail
+    inline_images=inline_images, header=header, print_letterhead=print_letterhead)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/smtp.py", line 85, in get_outgoing_email_account
+    frappe.OutgoingEmailError)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 380, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 359, in msgprint
+    _raise_exception()
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 319, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+Traceback (most recent call last):
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 788, in send
+    ed_obj.send()
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 65, in send
+    unsubscribe_message = _("Unsubscribe from this Email Digest"))
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 492, in sendmail
+    inline_images=inline_images, header=header, print_letterhead=print_letterhead)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/smtp.py", line 85, in get_outgoing_email_account
+    frappe.OutgoingEmailError)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 380, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 359, in msgprint
+    _raise_exception()
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 319, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+00:00:54 Moving job to 'failed' queue
+00:00:54 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.update_latest_price_in_all_boms', kwargs={}, method='erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.update_latest_price_in_all_boms', site='duplicateahok.crativate.com', user='Administrator') (3ca2b52d-cdb8-445d-ba50-4c1ba8c1e245)
+00:00:54 long: Job OK (3ca2b52d-cdb8-445d-ba50-4c1ba8c1e245)
+00:00:54 Result is kept for 500 seconds
+00:00:54 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation', kwargs={}, method='erpnext.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation', site='duplicateahok.crativate.com', user='Administrator') (ea5a9b28-1e0c-4d1c-967f-4e5bfb0afa9e)
+00:00:54 long: Job OK (ea5a9b28-1e0c-4d1c-967f-4e5bfb0afa9e)
+00:00:54 Result is kept for 500 seconds
+00:00:54 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.hr.utils.generate_leave_encashment', kwargs={}, method='erpnext.hr.utils.generate_leave_encashment', site='duplicateahok.crativate.com', user='Administrator') (70537e67-e8eb-43d6-8885-71e9013975df)
+00:00:54 long: Job OK (70537e67-e8eb-43d6-8885-71e9013975df)
+00:00:54 Result is kept for 500 seconds
+00:00:24 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily', kwargs={}, method='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily', site='duplicateahok.crativate.com', user='Administrator') (babbac23-1456-47b0-afc2-3851170c9bcf)
+00:00:25 long: Job OK (babbac23-1456-47b0-afc2-3851170c9bcf)
+00:00:25 Result is kept for 500 seconds
+00:00:25 Cleaning registries for queue: long
+00:00:25 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.utils.change_log.check_for_update', kwargs={}, method='frappe.utils.change_log.check_for_update', site='duplicateahok.crativate.com', user='Administrator') (70bf3e91-1c30-473d-b0e1-dedafdf7b387)
+fatal: No remote configured to list refs from.
+fatal: No remote configured to list refs from.
+fatal: No remote configured to list refs from.
+fatal: No remote configured to list refs from.
+00:00:26 long: Job OK (70bf3e91-1c30-473d-b0e1-dedafdf7b387)
+00:00:26 Result is kept for 500 seconds
+00:00:26 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily', kwargs={}, method='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily', site='duplicateahok.crativate.com', user='Administrator') (f8af7097-39db-45f9-92cf-d0a2dc8f2797)
+00:00:26 long: Job OK (f8af7097-39db-45f9-92cf-d0a2dc8f2797)
+00:00:26 Result is kept for 500 seconds
+00:00:26 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.google_drive.google_drive.daily_backup', kwargs={}, method='frappe.integrations.doctype.google_drive.google_drive.daily_backup', site='duplicateahok.crativate.com', user='Administrator') (1aef68e7-ed43-4ba1-b0a4-34cb28afb462)
+00:00:26 long: Job OK (1aef68e7-ed43-4ba1-b0a4-34cb28afb462)
+00:00:26 Result is kept for 500 seconds
+00:00:26 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.setup.doctype.email_digest.email_digest.send', kwargs={}, method='erpnext.setup.doctype.email_digest.email_digest.send', site='duplicateahok.crativate.com', user='Administrator') (18726717-380a-4df0-a09d-6996c4ea947b)
+00:00:27 frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+Traceback (most recent call last):
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 788, in send
+    ed_obj.send()
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 65, in send
+    unsubscribe_message = _("Unsubscribe from this Email Digest"))
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 492, in sendmail
+    inline_images=inline_images, header=header, print_letterhead=print_letterhead)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/smtp.py", line 85, in get_outgoing_email_account
+    frappe.OutgoingEmailError)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 380, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 359, in msgprint
+    _raise_exception()
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 319, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+Traceback (most recent call last):
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 788, in send
+    ed_obj.send()
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 65, in send
+    unsubscribe_message = _("Unsubscribe from this Email Digest"))
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 492, in sendmail
+    inline_images=inline_images, header=header, print_letterhead=print_letterhead)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/smtp.py", line 85, in get_outgoing_email_account
+    frappe.OutgoingEmailError)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 380, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 359, in msgprint
+    _raise_exception()
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 319, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+00:00:27 Moving job to 'failed' queue
+00:00:27 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.update_latest_price_in_all_boms', kwargs={}, method='erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.update_latest_price_in_all_boms', site='duplicateahok.crativate.com', user='Administrator') (440b3f5b-367c-4f12-9fc9-b7197d9cf132)
+00:00:27 long: Job OK (440b3f5b-367c-4f12-9fc9-b7197d9cf132)
+00:00:27 Result is kept for 500 seconds
+00:00:27 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation', kwargs={}, method='erpnext.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation', site='duplicateahok.crativate.com', user='Administrator') (b61c0e5c-0afd-405c-bef2-dc307f52a640)
+00:00:27 long: Job OK (b61c0e5c-0afd-405c-bef2-dc307f52a640)
+00:00:27 Result is kept for 500 seconds
+00:00:27 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.hr.utils.generate_leave_encashment', kwargs={}, method='erpnext.hr.utils.generate_leave_encashment', site='duplicateahok.crativate.com', user='Administrator') (b7e51c06-0d8d-4808-9c4d-dff7995f8c0d)
+00:00:27 long: Job OK (b7e51c06-0d8d-4808-9c4d-dff7995f8c0d)
+00:00:27 Result is kept for 500 seconds
+00:00:50 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily', kwargs={}, method='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily', site='duplicateahok.crativate.com', user='Administrator') (e40d14d1-cb8c-4a31-b94c-1024dd17f58a)
+00:00:51 long: Job OK (e40d14d1-cb8c-4a31-b94c-1024dd17f58a)
+00:00:51 Result is kept for 500 seconds
+00:00:51 Cleaning registries for queue: long
+00:00:51 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.utils.change_log.check_for_update', kwargs={}, method='frappe.utils.change_log.check_for_update', site='duplicateahok.crativate.com', user='Administrator') (77f776d1-3a51-4b76-94a5-ef7a65e5f9f0)
+fatal: No remote configured to list refs from.
+fatal: No remote configured to list refs from.
+fatal: No remote configured to list refs from.
+fatal: No remote configured to list refs from.
+00:00:52 long: Job OK (77f776d1-3a51-4b76-94a5-ef7a65e5f9f0)
+00:00:52 Result is kept for 500 seconds
+00:00:52 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily', kwargs={}, method='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily', site='duplicateahok.crativate.com', user='Administrator') (c3fb3eb1-d2bb-4565-a617-45a6b524436e)
+00:00:52 long: Job OK (c3fb3eb1-d2bb-4565-a617-45a6b524436e)
+00:00:52 Result is kept for 500 seconds
+00:00:52 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.google_drive.google_drive.daily_backup', kwargs={}, method='frappe.integrations.doctype.google_drive.google_drive.daily_backup', site='duplicateahok.crativate.com', user='Administrator') (bb1b14b6-edfd-4f56-9610-684d6db3eba6)
+00:00:52 long: Job OK (bb1b14b6-edfd-4f56-9610-684d6db3eba6)
+00:00:52 Result is kept for 500 seconds
+00:00:52 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.setup.doctype.email_digest.email_digest.send', kwargs={}, method='erpnext.setup.doctype.email_digest.email_digest.send', site='duplicateahok.crativate.com', user='Administrator') (bd391051-cc31-4670-b12f-938f61410e7e)
+00:00:53 frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+Traceback (most recent call last):
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 788, in send
+    ed_obj.send()
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 65, in send
+    unsubscribe_message = _("Unsubscribe from this Email Digest"))
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 492, in sendmail
+    inline_images=inline_images, header=header, print_letterhead=print_letterhead)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/smtp.py", line 85, in get_outgoing_email_account
+    frappe.OutgoingEmailError)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 380, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 359, in msgprint
+    _raise_exception()
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 319, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+Traceback (most recent call last):
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 788, in send
+    ed_obj.send()
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 65, in send
+    unsubscribe_message = _("Unsubscribe from this Email Digest"))
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 492, in sendmail
+    inline_images=inline_images, header=header, print_letterhead=print_letterhead)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/smtp.py", line 85, in get_outgoing_email_account
+    frappe.OutgoingEmailError)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 380, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 359, in msgprint
+    _raise_exception()
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 319, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+00:00:53 Moving job to 'failed' queue
+00:00:53 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.update_latest_price_in_all_boms', kwargs={}, method='erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.update_latest_price_in_all_boms', site='duplicateahok.crativate.com', user='Administrator') (0ccbd7e2-026d-40b4-93c3-7aedf487393a)
+00:00:53 long: Job OK (0ccbd7e2-026d-40b4-93c3-7aedf487393a)
+00:00:53 Result is kept for 500 seconds
+00:00:53 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation', kwargs={}, method='erpnext.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation', site='duplicateahok.crativate.com', user='Administrator') (13c22da6-0be9-49a2-95af-acc1d8ee7c36)
+00:00:53 long: Job OK (13c22da6-0be9-49a2-95af-acc1d8ee7c36)
+00:00:53 Result is kept for 500 seconds
+00:00:53 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.hr.utils.generate_leave_encashment', kwargs={}, method='erpnext.hr.utils.generate_leave_encashment', site='duplicateahok.crativate.com', user='Administrator') (42996767-f3b2-45eb-bd3f-62ec5237422a)
+00:00:53 long: Job OK (42996767-f3b2-45eb-bd3f-62ec5237422a)
+00:00:53 Result is kept for 500 seconds
+00:00:53 long: frappe.utils.background_jobs.execute_job(event='weekly_long', is_async=True, job_name='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_weekly', kwargs={}, method='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_weekly', site='duplicateahok.crativate.com', user='Administrator') (1a7c4f0a-eb5d-4d6c-a06f-2c862a92daf8)
+00:00:54 long: Job OK (1a7c4f0a-eb5d-4d6c-a06f-2c862a92daf8)
+00:00:54 Result is kept for 500 seconds
+00:00:54 long: frappe.utils.background_jobs.execute_job(event='weekly_long', is_async=True, job_name='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_weekly', kwargs={}, method='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_weekly', site='duplicateahok.crativate.com', user='Administrator') (9bdc643a-d752-4397-8d41-73b1821d80b3)
+00:00:54 long: Job OK (9bdc643a-d752-4397-8d41-73b1821d80b3)
+00:00:54 Result is kept for 500 seconds
+00:00:54 long: frappe.utils.background_jobs.execute_job(event='weekly_long', is_async=True, job_name='frappe.desk.doctype.route_history.route_history.flush_old_route_records', kwargs={}, method='frappe.desk.doctype.route_history.route_history.flush_old_route_records', site='duplicateahok.crativate.com', user='Administrator') (39386ab5-fd4e-4e7c-831a-7a3f021f9886)
+00:00:54 long: Job OK (39386ab5-fd4e-4e7c-831a-7a3f021f9886)
+00:00:54 Result is kept for 500 seconds
+00:00:54 long: frappe.utils.background_jobs.execute_job(event='weekly_long', is_async=True, job_name='frappe.desk.form.document_follow.send_weekly_updates', kwargs={}, method='frappe.desk.form.document_follow.send_weekly_updates', site='duplicateahok.crativate.com', user='Administrator') (7734031e-83ef-415b-9bb8-9045f15f20f8)
+00:00:54 long: Job OK (7734031e-83ef-415b-9bb8-9045f15f20f8)
+00:00:54 Result is kept for 500 seconds
+00:00:54 long: frappe.utils.background_jobs.execute_job(event='weekly_long', is_async=True, job_name='frappe.social.doctype.energy_point_log.energy_point_log.send_weekly_summary', kwargs={}, method='frappe.social.doctype.energy_point_log.energy_point_log.send_weekly_summary', site='duplicateahok.crativate.com', user='Administrator') (280abf01-573e-4d38-89f5-6fafb8e4de2c)
+00:00:54 long: Job OK (280abf01-573e-4d38-89f5-6fafb8e4de2c)
+00:00:54 Result is kept for 500 seconds
+00:00:54 long: frappe.utils.background_jobs.execute_job(event='weekly_long', is_async=True, job_name='frappe.integrations.doctype.google_drive.google_drive.weekly_backup', kwargs={}, method='frappe.integrations.doctype.google_drive.google_drive.weekly_backup', site='duplicateahok.crativate.com', user='Administrator') (31009d7a-72dc-442f-a8e8-702a18b35a9d)
+00:00:54 long: Job OK (31009d7a-72dc-442f-a8e8-702a18b35a9d)
+00:00:54 Result is kept for 500 seconds
+00:00:18 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily', kwargs={}, method='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily', site='duplicateahok.crativate.com', user='Administrator') (954a0b0c-b031-4bb4-aab2-f3d24d5cfd94)
+00:00:19 long: Job OK (954a0b0c-b031-4bb4-aab2-f3d24d5cfd94)
+00:00:19 Result is kept for 500 seconds
+00:00:19 Cleaning registries for queue: long
+00:00:19 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.utils.change_log.check_for_update', kwargs={}, method='frappe.utils.change_log.check_for_update', site='duplicateahok.crativate.com', user='Administrator') (f30a789c-f3d2-41ec-94e5-81c454b7e1d5)
+fatal: No remote configured to list refs from.
+fatal: No remote configured to list refs from.
+fatal: No remote configured to list refs from.
+fatal: No remote configured to list refs from.
+00:00:19 long: Job OK (f30a789c-f3d2-41ec-94e5-81c454b7e1d5)
+00:00:19 Result is kept for 500 seconds
+00:00:19 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily', kwargs={}, method='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily', site='duplicateahok.crativate.com', user='Administrator') (7c9218d6-94fa-4a59-a4ba-a8757fb56f07)
+00:00:20 long: Job OK (7c9218d6-94fa-4a59-a4ba-a8757fb56f07)
+00:00:20 Result is kept for 500 seconds
+00:00:20 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.google_drive.google_drive.daily_backup', kwargs={}, method='frappe.integrations.doctype.google_drive.google_drive.daily_backup', site='duplicateahok.crativate.com', user='Administrator') (b5a1ab0e-168a-4067-8c34-daa3f303dc9e)
+00:00:20 long: Job OK (b5a1ab0e-168a-4067-8c34-daa3f303dc9e)
+00:00:20 Result is kept for 500 seconds
+00:00:20 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.setup.doctype.email_digest.email_digest.send', kwargs={}, method='erpnext.setup.doctype.email_digest.email_digest.send', site='duplicateahok.crativate.com', user='Administrator') (67e03025-6f63-470f-9b47-92350bf3d79a)
+00:00:33 frappe.exceptions.ValidationError: No items to be received are overdue
+Traceback (most recent call last):
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 788, in send
+    ed_obj.send()
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 57, in send
+    msg_for_this_recipient = self.get_msg_html()
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 102, in get_msg_html
+    frappe.throw(_("No items to be received are overdue"))
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 380, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 359, in msgprint
+    _raise_exception()
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 319, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.ValidationError: No items to be received are overdue
+Traceback (most recent call last):
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 788, in send
+    ed_obj.send()
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 57, in send
+    msg_for_this_recipient = self.get_msg_html()
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 102, in get_msg_html
+    frappe.throw(_("No items to be received are overdue"))
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 380, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 359, in msgprint
+    _raise_exception()
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 319, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.ValidationError: No items to be received are overdue
+00:00:33 Moving job to 'failed' queue
+00:00:33 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.update_latest_price_in_all_boms', kwargs={}, method='erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.update_latest_price_in_all_boms', site='duplicateahok.crativate.com', user='Administrator') (4f28e4d3-be2b-4ce5-a411-53f4baaa20ec)
+00:00:33 long: Job OK (4f28e4d3-be2b-4ce5-a411-53f4baaa20ec)
+00:00:33 Result is kept for 500 seconds
+00:00:33 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation', kwargs={}, method='erpnext.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation', site='duplicateahok.crativate.com', user='Administrator') (200cefd3-bd39-4f6e-ae06-0927743b9144)
+00:00:33 long: Job OK (200cefd3-bd39-4f6e-ae06-0927743b9144)
+00:00:33 Result is kept for 500 seconds
+00:00:33 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.hr.utils.generate_leave_encashment', kwargs={}, method='erpnext.hr.utils.generate_leave_encashment', site='duplicateahok.crativate.com', user='Administrator') (0cee14ef-aa05-4fe6-b71e-77b47308a26a)
+00:00:33 long: Job OK (0cee14ef-aa05-4fe6-b71e-77b47308a26a)
+00:00:33 Result is kept for 500 seconds
+00:00:50 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily', kwargs={}, method='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily', site='duplicateahok.crativate.com', user='Administrator') (aac6c718-7d69-44e9-a75f-e95cb39b1a99)
+00:00:51 long: Job OK (aac6c718-7d69-44e9-a75f-e95cb39b1a99)
+00:00:51 Result is kept for 500 seconds
+00:00:51 Cleaning registries for queue: long
+00:00:51 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.utils.change_log.check_for_update', kwargs={}, method='frappe.utils.change_log.check_for_update', site='duplicateahok.crativate.com', user='Administrator') (a015e32a-9df9-49ee-8125-39653c87cf30)
+fatal: No remote configured to list refs from.
+fatal: No remote configured to list refs from.
+fatal: No remote configured to list refs from.
+fatal: No remote configured to list refs from.
+00:00:51 long: Job OK (a015e32a-9df9-49ee-8125-39653c87cf30)
+00:00:51 Result is kept for 500 seconds
+00:00:51 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily', kwargs={}, method='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily', site='duplicateahok.crativate.com', user='Administrator') (da0c8864-2e0a-472b-baa6-9df6b9d536a4)
+00:00:51 long: Job OK (da0c8864-2e0a-472b-baa6-9df6b9d536a4)
+00:00:51 Result is kept for 500 seconds
+00:00:51 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.google_drive.google_drive.daily_backup', kwargs={}, method='frappe.integrations.doctype.google_drive.google_drive.daily_backup', site='duplicateahok.crativate.com', user='Administrator') (0e4ac350-c63e-4cbe-bcfc-27b3c7079903)
+00:00:51 long: Job OK (0e4ac350-c63e-4cbe-bcfc-27b3c7079903)
+00:00:51 Result is kept for 500 seconds
+00:00:51 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.setup.doctype.email_digest.email_digest.send', kwargs={}, method='erpnext.setup.doctype.email_digest.email_digest.send', site='duplicateahok.crativate.com', user='Administrator') (f630ecbd-d21b-462b-b39c-e7d7410f9f1a)
+00:00:52 frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+Traceback (most recent call last):
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 788, in send
+    ed_obj.send()
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 65, in send
+    unsubscribe_message = _("Unsubscribe from this Email Digest"))
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 492, in sendmail
+    inline_images=inline_images, header=header, print_letterhead=print_letterhead)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/smtp.py", line 85, in get_outgoing_email_account
+    frappe.OutgoingEmailError)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 380, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 359, in msgprint
+    _raise_exception()
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 319, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+Traceback (most recent call last):
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/frappe/ahok-bench-copy/env/lib/python3.6/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 788, in send
+    ed_obj.send()
+  File "/home/frappe/ahok-bench-copy/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 65, in send
+    unsubscribe_message = _("Unsubscribe from this Email Digest"))
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 492, in sendmail
+    inline_images=inline_images, header=header, print_letterhead=print_letterhead)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/email/smtp.py", line 85, in get_outgoing_email_account
+    frappe.OutgoingEmailError)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 380, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 359, in msgprint
+    _raise_exception()
+  File "/home/frappe/ahok-bench-copy/apps/frappe/frappe/__init__.py", line 319, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+00:00:52 Moving job to 'failed' queue
+00:00:52 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.update_latest_price_in_all_boms', kwargs={}, method='erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.update_latest_price_in_all_boms', site='duplicateahok.crativate.com', user='Administrator') (209ed443-8e86-499a-8143-71cfe7a622d6)
+00:00:52 long: Job OK (209ed443-8e86-499a-8143-71cfe7a622d6)
+00:00:52 Result is kept for 500 seconds
+00:00:52 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation', kwargs={}, method='erpnext.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation', site='duplicateahok.crativate.com', user='Administrator') (fe8891d3-3645-420e-8fb9-4a9f5d82bb70)
+00:00:52 long: Job OK (fe8891d3-3645-420e-8fb9-4a9f5d82bb70)
+00:00:52 Result is kept for 500 seconds
+00:00:52 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.hr.utils.generate_leave_encashment', kwargs={}, method='erpnext.hr.utils.generate_leave_encashment', site='duplicateahok.crativate.com', user='Administrator') (a383f646-a852-431c-bd94-c053e741dd63)
+00:00:52 long: Job OK (a383f646-a852-431c-bd94-c053e741dd63)
+00:00:52 Result is kept for 500 seconds

@@ -1,0 +1,139 @@
+{
+ "autoname": "format:LAZADA|{date}|{store}",
+ "creation": "2020-11-01 21:05:40.853662",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "store",
+  "pending",
+  "unpaid",
+  "ready_to_ship",
+  "shipped",
+  "delivered",
+  "returned",
+  "canceled",
+  "failed",
+  "column_break_8",
+  "sync_failed",
+  "sync_succeed",
+  "section_break_11",
+  "lazada_order_list"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "store",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Store",
+   "options": "Lazada Store",
+   "read_only": 1
+  },
+  {
+   "fieldname": "pending",
+   "fieldtype": "Int",
+   "label": "Total Pending",
+   "read_only": 1
+  },
+  {
+   "fieldname": "unpaid",
+   "fieldtype": "Int",
+   "label": "Total Unpaid",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ready_to_ship",
+   "fieldtype": "Int",
+   "label": "Total Ready to Ship",
+   "read_only": 1
+  },
+  {
+   "fieldname": "shipped",
+   "fieldtype": "Int",
+   "label": "Total Shipped",
+   "read_only": 1
+  },
+  {
+   "fieldname": "delivered",
+   "fieldtype": "Int",
+   "label": "Total Delivered",
+   "read_only": 1
+  },
+  {
+   "fieldname": "returned",
+   "fieldtype": "Int",
+   "label": "Total Returned",
+   "read_only": 1
+  },
+  {
+   "fieldname": "canceled",
+   "fieldtype": "Int",
+   "label": "Total Canceled",
+   "read_only": 1
+  },
+  {
+   "fieldname": "failed",
+   "fieldtype": "Int",
+   "label": "Total Failed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sync_failed",
+   "fieldtype": "Text",
+   "label": "Sync Failed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sync_succeed",
+   "fieldtype": "Text",
+   "label": "Sync Succeed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "lazada_order_list",
+   "fieldtype": "Table",
+   "label": "Order List",
+   "options": "Lazada Order List"
+  }
+ ],
+ "modified": "2020-11-01 23:55:29.541612",
+ "modified_by": "Administrator",
+ "module": "Lazada Connector",
+ "name": "Lazada Order",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "store",
+ "track_changes": 1
+}

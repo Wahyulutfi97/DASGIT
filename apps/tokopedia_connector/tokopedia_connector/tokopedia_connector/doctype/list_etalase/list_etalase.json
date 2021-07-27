@@ -1,0 +1,48 @@
+{
+ "autoname": "field:id",
+ "creation": "2021-06-18 10:39:20.667279",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "id",
+  "etalase"
+ ],
+ "fields": [
+  {
+   "fieldname": "id",
+   "fieldtype": "Data",
+   "label": "id",
+   "unique": 1
+  },
+  {
+   "fieldname": "etalase",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Etalase"
+  }
+ ],
+ "modified": "2021-06-19 09:26:45.744435",
+ "modified_by": "Administrator",
+ "module": "Tokopedia Connector",
+ "name": "List Etalase",
+ "owner": "lutfi@crativate.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "etalase",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

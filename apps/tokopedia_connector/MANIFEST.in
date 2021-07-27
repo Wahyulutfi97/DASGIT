@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include tokopedia_connector *.css
+recursive-include tokopedia_connector *.csv
+recursive-include tokopedia_connector *.html
+recursive-include tokopedia_connector *.ico
+recursive-include tokopedia_connector *.js
+recursive-include tokopedia_connector *.json
+recursive-include tokopedia_connector *.md
+recursive-include tokopedia_connector *.png
+recursive-include tokopedia_connector *.py
+recursive-include tokopedia_connector *.svg
+recursive-include tokopedia_connector *.txt
+recursive-exclude tokopedia_connector *.pyc

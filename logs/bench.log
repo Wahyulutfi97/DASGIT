@@ -1,0 +1,15 @@
+2021-06-21 14:01:24,185 INFO installing frappe
+2021-06-21 21:30:19,367 INFO installing frappe
+2021-06-21 21:30:26,348 INFO installing erpnext
+2021-06-21 21:30:47,720 INFO installing lazada_connector
+2021-06-21 21:30:52,913 INFO installing marketplace_connector
+2021-06-21 21:30:54,250 INFO installing tokopedia_connector
+2021-06-21 21:32:55,170 INFO creating new app marketplace_connector
+2021-06-21 21:33:07,763 INFO installing marketplace_connector
+2021-06-21 21:33:57,923 INFO installing frappe
+2021-06-21 21:34:03,837 INFO installing erpnext
+2021-06-21 21:34:10,207 INFO installing lazada_connector
+2021-06-21 21:34:16,139 INFO installing marketplace_connector
+2021-06-21 21:34:21,137 INFO installing tokopedia_connector
+2021-06-22 09:19:09,357 INFO creating new app marketplace_integration
+2021-06-22 09:19:41,236 INFO installing marketplace_integration

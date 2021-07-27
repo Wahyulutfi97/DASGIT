@@ -1,0 +1,11 @@
+1931:C 21 Jun 21:56:49.405 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1931:C 21 Jun 21:56:49.405 # Redis version=4.0.9, bits=64, commit=00000000, modified=0, pid=1931, just started
+1931:C 21 Jun 21:56:49.405 # Configuration loaded
+1931:M 21 Jun 21:56:49.406 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+1931:M 21 Jun 21:56:49.406 # Server can't set maximum open files to 10032 because of OS error: Operation not permitted.
+1931:M 21 Jun 21:56:49.406 # Current maximum open files is 4096. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+1931:M 21 Jun 21:56:49.407 * Running mode=standalone, port=12013.
+1931:M 21 Jun 21:56:49.407 # Server initialized
+1931:M 21 Jun 21:56:49.407 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+1931:M 21 Jun 21:56:49.407 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1931:M 21 Jun 21:56:49.407 * Ready to accept connections

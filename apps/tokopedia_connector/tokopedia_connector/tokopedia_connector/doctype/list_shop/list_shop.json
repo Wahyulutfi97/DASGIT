@@ -1,0 +1,45 @@
+{
+ "creation": "2021-06-09 13:22:40.801586",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "shop_id",
+  "shop_name",
+  "url"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "shop_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Shop Id"
+  },
+  {
+   "columns": 3,
+   "fieldname": "shop_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Shop Name"
+  },
+  {
+   "columns": 4,
+   "fieldname": "url",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Url"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-06-09 14:12:22.936360",
+ "modified_by": "Administrator",
+ "module": "Tokopedia Connector",
+ "name": "List Shop",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

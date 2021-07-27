@@ -1,0 +1,271 @@
+{
+ "autoname": "field:no_referensi",
+ "creation": "2021-06-22 11:26:04.578406",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_1",
+  "pelanggan",
+  "id_pelanggan",
+  "column_break_4",
+  "marketplace",
+  "store_name",
+  "no_referensi",
+  "order_status",
+  "no_faktur",
+  "column_break_10",
+  "tanggal",
+  "sudah_lunas",
+  "section_break_13",
+  "nama_penerima",
+  "alamat_penerima",
+  "column_break_16",
+  "kota_penerima",
+  "telp_penerima",
+  "section_break_19",
+  "keterangan",
+  "kurir",
+  "total_berat",
+  "batas_kirim",
+  "column_break_24",
+  "pengambilan",
+  "no_resi",
+  "section_break_27",
+  "items",
+  "section_break_29",
+  "column_break_30",
+  "sub_total",
+  "diskon",
+  "pajak",
+  "diskon_lainnya",
+  "ongkos_kirim",
+  "asuransi",
+  "biaya_lainnya",
+  "potongan_biaya",
+  "total",
+  "nilai_escrow"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "pelanggan",
+   "fieldtype": "Data",
+   "label": "Pelanggan"
+  },
+  {
+   "fieldname": "id_pelanggan",
+   "fieldtype": "Data",
+   "label": "ID Pelanggan"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "marketplace",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Marketplace"
+  },
+  {
+   "fieldname": "store_name",
+   "fieldtype": "Data",
+   "label": "Store Name"
+  },
+  {
+   "fieldname": "no_referensi",
+   "fieldtype": "Data",
+   "label": "No Referensi",
+   "unique": 1
+  },
+  {
+   "fieldname": "order_status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Order Status"
+  },
+  {
+   "fieldname": "no_faktur",
+   "fieldtype": "Link",
+   "label": "No Faktur",
+   "options": "Sales Invoice"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tanggal",
+   "fieldtype": "Data",
+   "label": "Tanggal"
+  },
+  {
+   "default": "0",
+   "fieldname": "sudah_lunas",
+   "fieldtype": "Check",
+   "label": "Sudah Lunas"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "nama_penerima",
+   "fieldtype": "Data",
+   "label": "Nama Penerima"
+  },
+  {
+   "fieldname": "alamat_penerima",
+   "fieldtype": "Text",
+   "label": "Alamat Penerima"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "kota_penerima",
+   "fieldtype": "Data",
+   "label": "Kota Penerima"
+  },
+  {
+   "fieldname": "telp_penerima",
+   "fieldtype": "Data",
+   "label": "Telp Penerima"
+  },
+  {
+   "fieldname": "section_break_19",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "keterangan",
+   "fieldtype": "Text",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "kurir",
+   "fieldtype": "Data",
+   "label": "Kurir"
+  },
+  {
+   "fieldname": "total_berat",
+   "fieldtype": "Data",
+   "label": "Total Berat"
+  },
+  {
+   "fieldname": "batas_kirim",
+   "fieldtype": "Data",
+   "label": "Batas Kirim"
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pengambilan",
+   "fieldtype": "Data",
+   "label": "Pengambilan"
+  },
+  {
+   "fieldname": "no_resi",
+   "fieldtype": "Data",
+   "label": "No Resi"
+  },
+  {
+   "fieldname": "section_break_27",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Marketplace Order Item"
+  },
+  {
+   "fieldname": "section_break_29",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_30",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sub_total",
+   "fieldtype": "Currency",
+   "label": "Sub Total"
+  },
+  {
+   "fieldname": "pajak",
+   "fieldtype": "Currency",
+   "label": "Pajak"
+  },
+  {
+   "fieldname": "diskon_lainnya",
+   "fieldtype": "Currency",
+   "label": "Diskon Lainnya"
+  },
+  {
+   "fieldname": "ongkos_kirim",
+   "fieldtype": "Currency",
+   "label": "Ongkos Kirim"
+  },
+  {
+   "fieldname": "asuransi",
+   "fieldtype": "Currency",
+   "label": "Asuransi"
+  },
+  {
+   "fieldname": "biaya_lainnya",
+   "fieldtype": "Currency",
+   "label": "Biaya Lainnya"
+  },
+  {
+   "fieldname": "potongan_biaya",
+   "fieldtype": "Currency",
+   "label": "Potongan Biaya"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "label": "Total"
+  },
+  {
+   "fieldname": "diskon",
+   "fieldtype": "Currency",
+   "label": "Diskon"
+  },
+  {
+   "fieldname": "nilai_escrow",
+   "fieldtype": "Currency",
+   "label": "Nilai Escrow"
+  }
+ ],
+ "modified": "2021-06-23 10:51:16.842302",
+ "modified_by": "Administrator",
+ "module": "Marketplace Integration",
+ "name": "Marketplace Order",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "pelanggan",
+ "track_changes": 1
+}
